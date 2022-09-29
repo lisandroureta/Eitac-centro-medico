@@ -304,10 +304,6 @@ input {
     justify-self: center;
 }
 
-.formularioContacto {
-
-}
-
 .direccionContacto {
     grid-area: cont-2;
 }

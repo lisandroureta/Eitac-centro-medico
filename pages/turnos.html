@@ -27,16 +27,16 @@
         </nav>
     </header>
     <hr>
-    <main>
-        <section>
+    <main class="containerTurnos">
+        <section class="formTurnos">
             <h1>TURNOS ONLINE</h1>
             <form action="">
                 <!-- campo para el nombre -->
                 <!-- <label for="nombreyapellido">Nombre y Apellido</label> -->
-                <input type="text" id="nombreyapellido" name="nombreyapellido" placeholder="Nombre y Apellido">
+                <input class="controls" type="text" id="nombreyapellido" name="nombreyapellido" placeholder="Nombre y Apellido">
                 <!-- campo tipo de documento -->
                 <!-- <label for="tipodocumento">Tipo de Documento</label> -->
-                <select name="tipodocumento" id="tipodocumento">
+                <select class="controls" name="tipodocumento" id="tipodocumento">
                     <option value="tipo">Tipo de Documento</option>
                     <option value="dni">DNI</option>
                     <option value="cedula">Cédula</option>
@@ -44,16 +44,16 @@
                 </select>
                 <!-- campo numero de documento -->
                 <!-- <label for="documento">Número de Documento</label> -->
-                <input type="number" id="documento" name="documento" placeholder="Número de Documento">
+                <input class="controls" type="number" id="documento" name="documento" placeholder="Número de Documento">
                 <!-- campo telefono -->
                 <!-- <label for="telefono">Teléfono de Contacto</label> -->
-                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono de Contacto">
+                <input class="controls" type="tel" id="telefono" name="telefono" placeholder="Teléfono de Contacto">
                 <!-- campo para el correo -->
                 <!-- <label for="correo">Correo</label> -->
-                <input type="email" id="correo" name="correo" placeholder="Correo">
+                <input class="controls" type="email" id="correo" name="correo" placeholder="Correo">
                 <!-- campo elegir especialista -->
                 <!-- <label for="correo">Especialista</label> -->
-                <select name="especialista" id="especialista">
+                <select class="controls" name="especialista" id="especialista">
                     <option value="especialista">Especialista</option>
                     <option value="profesional1">Profesional 1</option>
                     <option value="profesional2">Profesional 2</option>
@@ -65,20 +65,22 @@
                 </select>
                 <!-- campo elegir obra social -->
                 <!-- <label for="obrasocial">Obra Social</label> -->
-                <select name="obrasoscial" id="obrasocial">
+                <select class="controls" name="obrasoscial" id="obrasocial">
                     <option value="obrasocial">Obra Social</option>
                     <option value="osde">Osde</option>
                     <option value="swissmedical">Swiss Medical</option>
                     <option value="particular">Particular</option>
                 </select>
                 <!-- botón de enviar -->
-                <input type="submit" value="Enviar">
+                <input class="botonTurnos" type="submit" value="Enviar">
             </form>
         </section>
-        <section>
+        <section class="direccionTurnos">
             <h2>DIRECCIÓN Y HORARIOS</h2>
             <p>Goleta Florencia 521</p>
             <p>De 9:00 a 21:00 hrs.</p>
+        </section>
+        <section class="mapaTurnos">
             <h3>UBICACIÓN</h3>
             <!-- mapita de google maps -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1625.8169850622673!2d-68.32279307164778!3d-54.81068051183658!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc4c2317e725ee75%3A0xe5cc2f8e41986556!2sEdificio%20Australis!5e0!3m2!1ses-419!2sar!4v1661698476402!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

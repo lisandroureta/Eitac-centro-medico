@@ -1,0 +1,55 @@
+.claseCarrusel {
+    display: flex;
+    justify-content: center;
+    .carrusel {
+        width: 70%;
+    }
+}
+.formBuscador {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    .inputBuscador {
+        width: 20%;
+        height: 30px;
+    }
+}
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    color: $color-principal;
+}
+h2, h3 {
+    font-weight: 500;
+    color: $color-principal;
+}
+.contObras {
+    display: flex;
+    justify-content: center;
+    img {
+        width: 15%;
+        height: 200px;
+        border-radius: 10px;
+        margin: 1%;
+    }
+}
+.direccionYubicacion {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    .direccion {
+        width: 600px;
+        height: 500px;
+    }
+    .ubicacion {
+        width: 600px;
+        height: 500px;
+        h3 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+input {
+    display: block;
+}
+
+.controls {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.botonContacto {
+    padding: 12px;
+}
+
+.formContacto {
+    grid-area: cont-1;
+    justify-self: center;
+}
+
+.direccionContacto {
+    grid-area: cont-2;
+}
+
+.mapaContacto {
+    grid-area: cont-3;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+.containerContacto { /*desktop*/
+    margin: 1%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "cont-1 cont-2"
+    "cont-1 cont-3"
+    ;
+
+}
+
+@media (max-width: 768px){ /*tablet*/
+    .containerContacto{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        "cont-1 cont-1"
+        "cont-2 cont-3"
+        ;
+    }
+}
+
+@media (max-width: 576px){ /*mobil*/
+    .containerContacto{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "cont-1"
+        "cont-2"
+        "cont-3"
+        ;
+    }
+}

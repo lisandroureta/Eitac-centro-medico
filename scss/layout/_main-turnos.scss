@@ -1,0 +1,66 @@
+input, select {
+    display: block;
+}
+
+.controls {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.botonTurnos {
+    padding: 12px;
+}
+
+.formTurnos {
+    grid-area: cont-1;
+    justify-self: center;
+}
+
+.direccionTurnos {
+    grid-area: cont-2;
+}
+
+.mapaTurnos {
+    grid-area: cont-3;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+.containerTurnos { /*desktop*/
+    margin: 1%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "cont-1 cont-2"
+    "cont-1 cont-3"
+    ;
+
+}
+
+@media (max-width: 768px){ /*tablet*/
+    .containerTurnos{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        "cont-1 cont-1"
+        "cont-2 cont-3"
+        ;
+    }
+}
+
+@media (max-width: 576px){ /*mobil*/
+    .containerTurnos{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "cont-1"
+        "cont-2"
+        "cont-3"
+        ;
+    }
+}

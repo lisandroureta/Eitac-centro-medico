@@ -55,11 +55,11 @@ header nav ul li:hover::before {
   width: 100%;
 }
 
-.claseCarrusel {
+.fotoInterior {
   display: flex;
   justify-content: center;
 }
-.claseCarrusel .carrusel {
+.fotoInterior img {
   width: 70%;
 }
 
@@ -92,7 +92,6 @@ h2, h3 {
 }
 .contObras img {
   width: 15%;
-  height: 200px;
   border-radius: 10px;
   margin: 1%;
 }
@@ -229,9 +228,18 @@ h2, h3 {
 .containerServicios {
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 2%;
 }
-.containerServicios li {
+.containerServicios .servicios .navServicios {
+  font-size: 25px;
+}
+.containerServicios .especialidades .navEspecialidades {
+  font-size: 25px;
+}
+
+.persona {
   list-style: none;
+  font-weight: bold;
 }
 
 input, select {

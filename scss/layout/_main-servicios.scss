@@ -1,7 +1,23 @@
 .containerServicios {
     display: flex;
     justify-content: space-evenly;
-    li {
-        list-style: none;
+    padding-bottom: 2%;
+    
+    .servicios{
+        .navServicios{
+            font-size: 25px;
+        }
     }
+
+    .especialidades{
+        .navEspecialidades{
+            font-size: 25px;
+            
+        }
+    }
+    
+}
+.persona{
+    list-style: none;
+    font-weight: bold;
 }
